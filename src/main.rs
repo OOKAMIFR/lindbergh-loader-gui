@@ -33,6 +33,6 @@ fn main() -> eframe::Result {
 }
 
 #[cfg(not(target_os = "linux"))]
-fn main() -> eframe::Result {
+fn () -> eframe::Result {
     compile_error!("This should not be compiled outside linux!")
 }
